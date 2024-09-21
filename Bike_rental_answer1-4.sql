@@ -11,9 +11,9 @@ FROM customer AS c
 LEFT JOIN membership AS m ON c.id = m.customer_id
 GROUP BY c.name
 ORDER BY count(0) DESC;
-TO identify the LEFT AND RIGHT TABLES:
-Look AT the TABLE IN the FROM clause: this IS your LEFT table.
-Look AT the TABLE IN the JOIN clause: this IS your RIGHT table.
+-- To identify the left and right tables:
+-- Look at the table in the FROM clause: this is your left table.
+-- Look at the table in the JOIN clause: this is your right table.
 
 -- 3 
 SELECT
